@@ -2,11 +2,11 @@
 #include <iostream>
 #include <iomanip>
 //#include "StatsReader.h"
-#include <cstring>
+#include <string>
 
-using namespace std;
+//using namespace std;
 
-Team::Team(const char* teamname, double wins,double r,double PPG, double OPPG)
+Team::Team(std::string teamname, double wins,int r,double PPG, double OPPG)
 {
 	seasonWins = wins; // when constructed, set all stats
 	teamName = teamname;

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
-#include <cstring>
+#include <string>
 //#include "StatsReader.h"
 
 class Team
@@ -11,8 +11,8 @@ class Team
 protected:
 	// variables describing the various team stats go here
 	double seasonWins; // win percentage
-	const char* teamName;
-	double seed;
+	std::string teamName;
+	int seed;
 	double ppg;
 	double oppg; // opposing teams ppg (measures defense)
 	// variables describing the record of wins
@@ -21,11 +21,11 @@ protected:
 	int FFCount;
 	int EECount;
 public:
-	Team(const char*,double,double,double,double);
+	Team(std::string,double,int,double,double);
 	~Team();
 
 	// methods to output all relevant stats
-	const char* GetTeamName() {return teamName;}
+	std::string GetTeamName() {return teamName;}
 	double GetSeasonWins() {return seasonWins;}
 	double GetSeed() {return seed;}
 	double GetPPG() {return ppg;}
