@@ -1,4 +1,4 @@
-# NCAA-Bracket-Challenge
+# Machine learning for basketball
 
 ## Required source files: MCTourny.cpp, Team.cpp
 ## Required headers: Team.h
